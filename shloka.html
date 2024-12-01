@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit Shlokas</title>
+    <link rel="stylesheet" href="shloka.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="panel-header">
+                <div class="om-symbol">ॐ</div>
+                <h3>भगवद्गीता</h3>
+            </div>
+            <div class="shloka-list">
+                <button class="shloka-btn active" data-shloka="1">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक १</span>
+                </button>
+                <button class="shloka-btn" data-shloka="2">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक २</span>
+                </button>
+                <button class="shloka-btn" data-shloka="3">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक ३</span>
+                </button>
+                <button class="shloka-btn" data-shloka="4">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक ४</span>
+                </button>
+                <button class="shloka-btn" data-shloka="5">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक ५</span>
+                </button>
+                <button class="shloka-btn" data-shloka="6">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक ६</span>
+                </button>
+                <button class="shloka-btn" data-shloka="7">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक ७</span>
+                </button>
+                <button class="shloka-btn" data-shloka="8">
+                    <span class="diya">🪔</span>
+                    <span>श्लोक ८</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="kalash-decoration"></div>
+            <h2 class="sanskrit-title">॥ श्रीमद्भगवद्गीता ॥</h2>
+            
+            <div class="language-buttons">
+                <button class="lang-btn active" data-lang="telugu">
+                    <span class="bell-icon">🔔</span>
+                    తెలుగు
+                </button>
+                <button class="lang-btn" data-lang="english">
+                    <span class="bell-icon">🔔</span>
+                    English
+                </button>
+                <button class="lang-btn" data-lang="malayalam">
+                    <span class="bell-icon">🔔</span>
+                    മലയാളം
+                </button>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Shloka and Meaning Box -->
+                <div class="shloka-meaning-box">
+                    <div class="shloka-display">
+                        <div class="temple-arch"></div>
+                        <div class="lotus-top"></div>
+                        <div class="sanskrit-text">
+                            <div class="original-sanskrit">
+                                अगजानन-पद्मार्कं गजाननम्-अहर्निशम्।
+                                अनेकदंतं भक्तानाम् एकदंतम् उपास्महे ॥१॥
+                            </div>
+                            <div class="transliteration">
+                                <!-- Transliteration will be added by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="lotus-bottom"></div>
+                    </div>
+
+                    <div class="meaning-container">
+                        <div class="meaning-tabs">
+                            <button class="tab-btn active" data-tab="translation">
+                                <span class="diya">🪔</span> Translation
+                            </button>
+                            <button class="tab-btn" data-tab="explanation">
+                                <span class="diya">🪔</span> Explanation
+                            </button>
+                        </div>
+
+                        <div class="meaning-content">
+                            <div class="meaning-panel active" id="translation">
+                                <div class="translation-text">
+                                    <!-- Translation content will be added by JavaScript -->
+                                </div>
+                            </div>
+                            <div class="meaning-panel" id="explanation">
+                                <div class="explanation-text">
+                                    <!-- Explanation content will be added by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Controls Box -->
+                <div class="audio-control-box">
+                    <div class="audio-controls">
+                        <div class="voice-toggle-container">
+                            <button class="voice-toggle" title="Toggle Voice Gender">
+                                <span class="male-icon">♂</span>
+                                <span class="toggle-slider"></span>
+                                <span class="female-icon">♀</span>
+                            </button>
+                        </div>
+
+                        <div class="playback-controls">
+                            <div class="speed-control">
+                                <div class="speed-options">
+                                    <button data-speed="0.5">0.5x</button>
+                                    <button data-speed="0.75">0.75x</button>
+                                    <button data-speed="1.0" class="active">1.0x</button>
+                                    <button data-speed="1.25">1.25x</button>
+                                    <button data-speed="1.5">1.5x</button>
+                                </div>
+                            </div>
+
+                            <button class="play-btn" title="Play/Pause">
+                                <span class="play-icon">॥</span>
+                            </button>
+
+                            <button class="undo-btn" title="Undo Last Change">
+                                <span class="undo-icon">↺</span>
+                            </button>
+
+                            <div class="volume-control">
+                                <button class="volume-btn" title="Volume">
+                                    <span class="volume-icon">🕉</span>
+                                </button>
+                                <div class="volume-slider-container">
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                    <span class="volume-percentage">100%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="time-display">00:00 / 00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="sampleTeluguMale" src="audio/shloka1_telugu_male.mp3" preload="none"></audio>
+    <audio id="sampleTeluguFemale" src="audio/shloka1_telugu_female.mp3" preload="none"></audio>
+    <audio id="sampleEnglishMale" src="audio/shloka1_english_male.mp3" preload="none"></audio>
+    <audio id="sampleEnglishFemale" src="audio/shloka1_english_female.mp3" preload="none"></audio>
+    <audio id="sampleMalayalamMale" src="audio/shloka1_malayalam_male.mp3" preload="none"></audio>
+    <audio id="sampleMalayalamFemale" src="audio/shloka1_malayalam_female.mp3" preload="none"></audio>
+
+    <!-- JavaScript -->
+    <script src="shloka.js"></script>
+</body>
+</html> 
